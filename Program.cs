@@ -34,7 +34,12 @@ namespace MerpeyHypeServer
         public async Task Loginv0(IHttpContext context)
         {
             //login işlemleri
+            string MainUser = context.Request.Headers["MainUser"];
+            string UserName = context.Request.Headers["UserName"];
+            string Password = context.Request.Headers["Password"];
+
             await context.Response.SendResponseAsync("Success Login Route!");
+
         }
     }
 }
