@@ -68,6 +68,12 @@ namespace MerpeyHypeServer
     [RestResource]
     public class MyResource
     {
+
+        [RestRoute("Get", "isitUP")]
+        public async Task isitUP(IHttpContext context)
+        {
+            await context.Response.SendResponseAsync("YES!");
+        }
         [RestRoute("Get", "/api/test")]
         public async Task Test(IHttpContext context)
         {
