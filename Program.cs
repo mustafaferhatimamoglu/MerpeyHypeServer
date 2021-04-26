@@ -86,7 +86,7 @@ namespace MerpeyHypeServer
             string MainUser = context.Request.Headers["MainUser"];
             string UserName = context.Request.Headers["UserName"];
             string Password = context.Request.Headers["Password"];
-            string DT = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+            //string DT = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
 
             await context.Response.SendResponseAsync("Success Login Route!");
 
